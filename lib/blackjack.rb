@@ -26,7 +26,6 @@ def initial_round
   firstCard = deal_card
   secondCard = deal_card
   card_total = firstCard + secondCard
-  display_card_total(card_total)
   card_total
 end
 
@@ -59,7 +58,7 @@ def runner(card_total)
   initial_round
   until card_total > 21
     hit?
-
+    display_card_total
   end
   end_game
 end
