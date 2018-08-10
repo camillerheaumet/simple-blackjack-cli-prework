@@ -40,6 +40,9 @@ def hit? #(number argument)
     card_total = initial_round + newCard
     display_card_total(card_total)
     card_total
+  else
+    invalid_command
+    
 end
 
 def invalid_command
