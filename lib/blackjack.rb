@@ -42,7 +42,9 @@ def hit?(initial_round)
       newCard = deal_card
       card_total = initial_round + newCard
       display_card_total(card_total)
-      card_total
+      if card_total >= 21
+        false
+      end
     else
       invalid_command
     end
