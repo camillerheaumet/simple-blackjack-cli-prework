@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  # code #deal_card here
+  puts rand(1..11).to_i
 end
 
 def display_card_total
@@ -41,4 +41,3 @@ end
 def runner
   # code runner here
 end
-    
