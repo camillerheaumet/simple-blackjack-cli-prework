@@ -30,25 +30,21 @@ def initial_round
   card_total
 end
 
-def hit?(initial_round)
-  loop do
+def hit?(initial_round) #(number argument)
+  loop do 
     prompt_user
     answer = get_user_input
+    
+  if answer == "s"
+    #we dont deal a new card
+  elsif answer == "h"
+    newCard = deal_card
+    card_total = initial_round + newCard
+    display_card_total(card_total)
+    card_total
+  else
+    invalid_command
 
-    case (answer)
-    when "s"
-      false
-    when "h"
-      newCard = deal_card
-      card_total = initial_round + newCard
-      display_card_total(card_total)
-      if card_total >= 21
-        false
-      end
-    else
-      invalid_command
-    end
-  end
 end
 
 def invalid_command
