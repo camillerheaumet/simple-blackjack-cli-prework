@@ -30,7 +30,7 @@ def initial_round
   card_total
 end
 
-def hit? #(number argument)
+def hit?(initial_round) #(number argument)
   prompt_user
   answer = get_user_input
   if answer == "s"
@@ -42,7 +42,7 @@ def hit? #(number argument)
     card_total
   else
     invalid_command
-    
+
 end
 
 def invalid_command
