@@ -38,7 +38,8 @@ def hit? #(number argument)
   elsif answer == "h"
     newCard = deal_card
     card_total = initial_round + newCard
-    
+    display_card_total(card_total)
+    card_total
 end
 
 def invalid_command
