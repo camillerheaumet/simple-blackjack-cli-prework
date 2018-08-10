@@ -30,7 +30,7 @@ def initial_round
   card_total
 end
 
-def hit?(initial_round) #(number argument)
+def hit?(initial_round)
   loop do
     prompt_user
     answer = get_user_input
