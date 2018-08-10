@@ -36,7 +36,7 @@ def hit?(card_total)
 
   if answer == "h"
     newCard = deal_card
-    card_total = initial_round + newCard
+    card_total += newCard
     display_card_total(card_total)
     card_total
   elsif answer != "s" || answer != "h"
