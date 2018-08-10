@@ -39,7 +39,7 @@ def hit?(initial_round)
     initial_round += newCard
     display_card_total(card_total)
     card_total
-  elsif answer != "s" || answer != "h"
+  elsif answer != "s" && answer != "h"
     invalid_command
     hit?
   end
