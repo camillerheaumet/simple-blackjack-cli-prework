@@ -33,11 +33,11 @@ end
 def hit? #(number argument)
   prompt_user
   get_user_input
-  if 
+  if
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
