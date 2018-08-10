@@ -32,8 +32,10 @@ end
 
 def hit? #(number argument)
   prompt_user
-  get_user_input
+  answer = get_user_input
+  if answer == "s"
 
+  elsif answer == "h"
 end
 
 def invalid_command
