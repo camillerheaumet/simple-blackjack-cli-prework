@@ -34,8 +34,11 @@ def hit? #(number argument)
   prompt_user
   answer = get_user_input
   if answer == "s"
-
+    #we dont deal a new card
   elsif answer == "h"
+    newCard = deal_card
+    card_total = initial_round + newCard
+    
 end
 
 def invalid_command
