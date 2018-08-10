@@ -31,7 +31,7 @@ def initial_round
 end
 
 def hit?(initial_round) #(number argument)
-  loop do 
+  loop do
     prompt_user
     answer = get_user_input
 
